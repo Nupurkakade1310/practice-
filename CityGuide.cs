@@ -1,12 +1,12 @@
-class CityGuide
+class Ex
 {
-	public static void main( )
+	public void Fun( )
 	{
-		Console.WriteLine("Select your choice");
-		Console.WriteLine("London");
-		Console.WriteLine("Bombay");
-		Console.WriteLine("Paris");
-		Console.WriteLine("Type-0 your choice");
+		System.Console.WriteLine("Select your choice");
+		System.Console.WriteLine("London");
+		System.Console.WriteLine("Bombay");
+		System.Console.WriteLine("Paris");
+		System.Console.WriteLine("Type-0 your choice");
 		String name = Console.ReadLine( );
 
 		switch (name)
@@ -24,7 +24,11 @@ class CityGuide
 			      Console.WriteLine ("Invalid choice");
 		}
          }
-	
-		
-		
-		
+class CityGuide
+{
+	public static void main(string[] args)
+	{
+		Ex obj=new Ex();
+		obj.Fun();
+	}
+}

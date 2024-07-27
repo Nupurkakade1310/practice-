@@ -1,38 +1,38 @@
-Class  IfElseNesting
+class Ex
 {
-   public static void Main()
-   { 
-      int a = 325, b = 712, c = 478; 
-
-      Console. Write("Largest value is: ");
-
-      if (a > b)
-      {
-	if (a > c)
-	{ 
-	  Console. WriteLine(a);
+	public void Fun()
+	{
+		int a=325, b=712, c=478;
+		System.Console.WriteLine("Largest value is :");
+		if(a>b)
+		{
+			if(a>c)
+			{
+				System.Console.WriteLine(a);
+			}
+			else
+			{
+				System.Console.WriteLine(c);
+			}
+		}
+		else
+		{
+			if(c>b)
+			{
+				System.Console.WriteLine(c);
+			}
+			else
+			{
+				System.Console.WriteLine(b);
+			}
+		}
 	}
-
-	else
-	{ 
-	  Console. WriteLine(c);
+}
+class IfElseNesting
+{
+	public static void Main(string[] args)
+	{
+		Ex obj= new Ex();
+		obj.Fun();
 	}
-      }
-
-    else
-    {
-       if (c > b)
-       { 
- 	 Console. WriteLine(c);
-       }
-     
-      else
-      {
-	Console. WriteLine(b);
-      }
-
-    }
-
-  }  
-
 }

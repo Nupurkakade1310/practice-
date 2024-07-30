@@ -1,27 +1,34 @@
+class Ex
+{
+	public void Fun()
+	{
+		int n =10;
+		while (n<200)
+		{
+			if(n<50)
+			{
+				System.Console.WriteLine(" " +n);
+				n=n+10;
+				continue;
+			}
+			if(n==50)
+			{
+				System.Console.WriteLine( );
+					n=n+10;
+					continue;
+			}
+			if(n>90) break;
+				System.Console.WriteLine(" "+n);
+				n=n+10;
+		}
+		System.Console.WriteLine( );
+	}
+}
 class ContinueBreak
 {
-	public static void Main ( )
+	public static void Main(string[] args)
 	{
-		int n = 10;
-		while ( n < 200 )
-		{
-		if ( n < 50 )
-		{
-			Console.Write(" " + n);
-			n = n +10;
-			continue;
-		}
-
-		If (n == 50)
-		{
-		Console.WriteLine( );
-			n = n + 10;
-			continue;
-		}
-		if (n < 90)break;
-		Console.Write(" " + n);
-			n = n + 10;
+		Ex obj=new Ex();
+		obj.Fun();
 	}
-	Console.WriteLine( );
-      }
 }
